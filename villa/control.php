@@ -108,44 +108,32 @@ class control extends model     // 2 step extends(inherit) model class
 			
 			case '/login':
 				if (isset($_REQUEST['submit'])) {
-					
+
 					$email = $_REQUEST['email'];
 					$password = md5($_REQUEST['password']); // pass encripted 
-					
+	
 					$where = array("email" => $email, "password" => $password);
 					$res=$this->select_where('user',$where);
 					$chk=$res->num_rows; // 0 means false & 1 means true  check row wise condition
-					
+	
 					if($chk==1)
-					{
-						
-						$data=$res->fetch_object(); // single data fetch 
-						if($data->status=="Unblock")
 						{
+							$data=$res->fetch_object(); // single data fetch 
 							$_SESSION['uname']=$data->name;
 							$_SESSION['uid']=$data->id;
-							
 							echo "<script>
 								alert('Login Success !');
-								window.location='home'
+								window.location='home';
 							</script>";
 						}
 						else
 						{
 							echo "<script>
-								alert('Your Account Blocked so Contacts us !');
-								window.location='home'
+								alert('Login Failed !');
 							</script>";
 						}
-					}
-					else
-					{
-						echo "<script>
-							alert('Login Failed due to wrong credential!');
-						</script>";
-					}
+						
 				}
-
 				include_once('login.php');
 				break;
 			
