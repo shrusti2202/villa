@@ -13,7 +13,6 @@ include_once('navbar.php')
 <html>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-/* * {box-sizing: border-box} */
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
