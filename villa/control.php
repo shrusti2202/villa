@@ -32,6 +32,9 @@ class control extends model     // 2 step extends(inherit) model class
 						</script>";
 					}
 				}
+			$properties=$this->select('properties');
+			$properties=$this->select_join('properties.*,categories.name as cat_name','properties','categories','properties.cat_id=categories.id');
+
 			include_once('index.php');
 			break;
 			

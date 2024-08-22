@@ -28,7 +28,7 @@ include_once('navbar.php');
                 <div class="card border-0 mb-2"  >
                     <div class="card-body  p-4" >
                 <img src="../Admin/upload/blog/<?php echo $w->img;?>" width="100%" height="250px" />
-                        <h4 class="card-title text-truncate"><?php echo $w->name;?></h4>
+                        <h4 class="card-title text-truncate"><?php echo $w->name;?></h4>  
                         <div class="d-flex mb-3 ">
                             <small class="mr-2 "><i class="fa fa-user text-muted"></i> <?php echo $w->place;?></small>
                             <!-- <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
