@@ -23,12 +23,18 @@ include_once('navbar.php');
     </div>
   </div>
 
+<?php
+
+  foreach($single_pro as $w)
+  {
+?>
+
   <div class="single-property section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
           <div class="main-image">
-            <img src="assets/images/single-property.jpg" alt="">
+          <img src="../Admin/upload/property/<?php echo $w->img;?>" width="100%" height="250px" />
           </div>
             
           <div class="main-content">
@@ -219,6 +225,8 @@ include_once('navbar.php');
   </div>
 
  <?php
+ }
+ ?>
 
 include_once('footer.php');
 

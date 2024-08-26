@@ -6,7 +6,6 @@ include_once('navbar.php');
         <div class="row">
             <div class="col-md-12">
                 <h2>Add Categories</h2>
-
             </div>
         </div>
         <!-- /. ROW  -->
@@ -15,28 +14,18 @@ include_once('navbar.php');
             <div class="col-md-12">
                 <!-- Form Elements -->
                 <div class="panel panel-default">
-
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-12">
-
                                 <form role="form" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Categories Name</label>
-                                        <input name="name" class="form-control"
-                                            placeholder="Please Enter Service Name" />
+                                        <input name="name" class="form-control"  placeholder="Please Enter Service Name" />
                                     </div>
-
-
-
                                     <button type="submit" name="submit" class="btn btn-default">Submit </button>
                                     <button type="reset" class="btn btn-primary">Reset </button>
-
                                 </form>
-
-
                             </div>
-
                         </div>
                     </div>
                 </div>

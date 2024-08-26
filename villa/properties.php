@@ -47,7 +47,7 @@ include_once('navbar.php');
 											?>
             <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv ">
                 <div class="item">
-                    <a href="single_property"><img src="../Admin/upload/property/<?php echo $w->img;?>"  width="100%" height="250px" /></a>
+                    <a href="single_property?single_property=<?php echo $w->id;?>"><img src="../Admin/upload/property/<?php echo $w->img;?>"  width="100%" height="250px" /></a>
                     <span class="category"><?php echo $w->cat_name;?></span>
                     <h6>₹<?php echo $w->price;?></h6>
                     <h4><a href="property-details.php"><?php echo $w->name;?></a></h4>             

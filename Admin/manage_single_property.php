@@ -1,6 +1,7 @@
 ﻿<?php
 include_once('navbar.php');
 ?>
+
 <div id="page-wrapper">
     <div id="page-inner">
         <div class="row">
@@ -15,7 +16,7 @@ include_once('navbar.php');
         <div class="row">
             <div class="col-md-12">
                 <!-- Advanced Tables -->
-                <div class="panel panel-default">
+                <div class="panel panel-default ">
 
                     <div class="panel-body">
                         <div class="table-responsive">
