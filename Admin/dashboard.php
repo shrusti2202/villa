@@ -5,7 +5,7 @@ include_once('navbar.php');
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h2>Villa Dashboard</h2>
+                <h2>The Urban Oasis Dashboard</h2>
             </div>
         </div>
         <!-- /. ROW  -->

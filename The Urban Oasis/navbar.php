@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <title>Villa Agency - Real Estate HTML5 Template</title>
+    <title>The Urban Oasis Real Estate HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -73,7 +73,7 @@ https://templatemo.com/tm-591-villa-agency
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index" class="logo">
-                            <h1>Villa</h1>
+                            <h1>The Urban Oasis</h1>
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->

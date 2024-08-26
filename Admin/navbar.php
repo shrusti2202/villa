@@ -17,7 +17,7 @@ else
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Villa Admin</title>
+    <title>The Urban Oasis</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -40,7 +40,7 @@ else
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="admin"> Villa admin</a>
+                <a class="navbar-brand" href="admin"><h3>The Urban Oasis</h3></a>
             </div>
             <div class="navbar-right  navbar-brand">
                 <a href="admin_logout" class="btn btn-danger" title="Logout">Logout</a>

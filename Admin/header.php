@@ -2,7 +2,7 @@
         <div className="container ">
           <nav className="navbar navbar-expand-lg navbar-light ">
             <h1><Link className="navbar-brand pe-xl-5 pe-lg-4" to="/">
-              <i className="fas fa-spa" />GlamBell
+              <i className="fas fa-spa">
             </Link></h1>
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon fa icon-expand fa-bars" />
