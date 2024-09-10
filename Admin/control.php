@@ -946,6 +946,7 @@
 		     case '/properties_delete':	
 		     	$data = json_decode(file_get_contents("php://input"), true);
 		     	$id = $data["id"];
+				
 		     	// $id = $_GET['id'];
 		     	$where=array("id"=>$id);
 		     	$res=$this->delete_where('properties',$where);

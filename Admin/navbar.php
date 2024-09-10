@@ -55,6 +55,7 @@ else
                         <img src="assets/img/find_user.png" class="user-image img-responsive" />
                         <div class="inner-text text-danger">
                             <h3>
+                                <?php echo $_SESSION['aid']?>
                                 <?php echo $_SESSION['aname']?>
                                 <br />
                                 <small>Last Login : Just Now</small>
