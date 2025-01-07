@@ -26,26 +26,24 @@ include_once('navbar.php');
                                         <select class="form-control" id="contact-select" name="cat_id">
                                             <option value="-">Select categories</option>
                                             <?php
-                      foreach($categories as $w)
-                      {
-                      ?>
-                                            <option value="<?php echo $w->id?>"><?php echo $w->name?></option>
+                                            foreach ($categories as $w) {
+                                            ?>
+                                                <option value="<?php echo $w->id ?>"><?php echo $w->name ?></option>
                                             <?php
-                      }
-                      ?>
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group pb-3">
                                         <select class="form-control" id="contact-select" name="pro_id">
                                             <option value="-">Select properties</option>
                                             <?php
-                      foreach($properties as $w)
-                      {
-                      ?>
-                                            <option value="<?php echo $w->id?>"><?php echo $w->name?></option>
+                                            foreach ($properties as $w) {
+                                            ?>
+                                                <option value="<?php echo $w->id ?>"><?php echo $w->name ?></option>
                                             <?php
-                      }
-                      ?>
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -59,32 +57,32 @@ include_once('navbar.php');
                                     </div>
                                     <div class="form-group">
                                         <label>Location</label>
-                                        <input type='text' class="form-control" placeholder="Please Enter location"   
+                                        <input type='text' class="form-control" placeholder="Please Enter location"
                                             name="location" />
                                     </div>
                                     <div class="form-group">
                                         <label>Bedrrom</label>
-                                        <input type='number' class="form-control" placeholder="Please Enter Bedroom"   
+                                        <input type='number' class="form-control" placeholder="Please Enter Bedroom"
                                             name="bedroom" />
                                     </div>
                                     <div class="form-group">
                                         <label>Bathroom</label>
-                                        <input type='number' class="form-control" placeholder="Please Enter Bathroom"   
+                                        <input type='number' class="form-control" placeholder="Please Enter Bathroom"
                                             name="bathroom" />
                                     </div>
                                     <div class="form-group">
                                         <label>Kitchen</label>
-                                        <input type='number' class="form-control" placeholder="Please Enter kitchen"  
+                                        <input type='number' class="form-control" placeholder="Please Enter kitchen"
                                             name="kitchen" />
                                     </div>
                                     <div class="form-group">
-                                        <label>	Floor</label>
-                                        <input type='number' class="form-control" placeholder="Please Enter floor"   
+                                        <label> Floor</label>
+                                        <input type='number' class="form-control" placeholder="Please Enter floor"
                                             name="floor" />
                                     </div>
                                     <div class="form-group">
                                         <label>Parking</label>
-                                        <input type='number' class="form-control" placeholder="Please Enter parking" 
+                                        <input type='number' class="form-control" placeholder="Please Enter parking"
                                             name="parking" />
                                     </div>
                                     <div class="form-group">

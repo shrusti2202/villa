@@ -20,7 +20,7 @@ include_once('navbar.php');
                                 <form role="form" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Categories Name</label>
-                                        <input name="name" class="form-control"  placeholder="Please Enter Service Name" />
+                                        <input name="name" class="form-control" placeholder="Please Enter Service Name" />
                                     </div>
                                     <button type="submit" name="submit" class="btn btn-default">Submit </button>
                                     <button type="reset" class="btn btn-primary">Reset </button>

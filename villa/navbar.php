@@ -84,25 +84,22 @@ https://templatemo.com/tm-591-villa-agency
                             <li><a href="blog">blog </a></li>
                             <li><a href="contact">Contact Us</a></li>
                             <?php
-											if(isset($_SESSION['uid']))
-											{
-											?>
+                            if (isset($_SESSION['uid'])) {
+                            ?>
 
-                            
-                            <li class="nav-item "><a class="nav-link tm-nav-link" href="profile">Hi..
-                                    <?php echo $_SESSION['uname'];?></a></li>
-                            <li class="nav-item "><a class="nav-link tm-nav-link" href="user_logout">Logout</a></li>
+
+                                <li class="nav-item "><a class="nav-link tm-nav-link" href="profile">Hi..
+                                        <?php echo $_SESSION['uname']; ?></a></li>
+                                <li class="nav-item "><a class="nav-link tm-nav-link" href="user_logout">Logout</a></li>
 
                             <?php
-                            
-											}
-											else	
-											{
-											?>
-                            <li class="nav-item "><a class="nav-link tm-nav-link" href="signup">Signup</a></li>
+
+                            } else {
+                            ?>
+                                <li class="nav-item "><a class="nav-link tm-nav-link" href="signup">Signup</a></li>
                             <?php
-											}
-											?>
+                            }
+                            ?>
                             <li><a href="#"></li>
                         </ul>
                         <a class='menu-trigger'>

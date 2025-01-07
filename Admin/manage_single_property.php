@@ -40,43 +40,39 @@ include_once('navbar.php');
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php
-									if(!empty($single_pro))
-										{
-											foreach($single_pro as $w)
-											{
-											?>
-                                    <tr>
-                                        <td><?php echo $w->id;?></td>
-                                        <td><?php echo $w->cat_id;?></td>
-                                        <td><?php echo $w->pro_id;?></td>
-                                        <td><img src="upload/property/<?php echo $w->img;?>" width="50px" /></td>
-                                        <td><?php echo $w->price;?></td>
-                                        <td><?php echo $w->location;?></td>
-                                        <td><?php echo $w->bedroom;?></td>
-                                        <td><?php echo $w->bathroom;?></td>
-                                        <td><?php echo $w->kitchen;?></td>
-                                        <td><?php echo $w->floor;?></td>
-                                        <td><?php echo $w->parking;?></td>
-                                        <td><?php echo $w->title;?></td>
-                                        <td><?php echo $w->long_desc;?></td>
-                                        <td>
-                                            <a href="edit_single_property?esingle_pro=<?php echo $w->id;?>" class="btn btn-primary">Edit</a>
-                                            <a href="delete?dsingle_pro=<?php echo $w->id;?>" class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
                                     <?php
-											}
-										}
-										else
-										{	
+                                    if (!empty($single_pro)) {
+                                        foreach ($single_pro as $w) {
+                                    ?>
+                                            <tr>
+                                                <td><?php echo $w->id; ?></td>
+                                                <td><?php echo $w->cat_id; ?></td>
+                                                <td><?php echo $w->pro_id; ?></td>
+                                                <td><img src="upload/property/<?php echo $w->img; ?>" width="50px" /></td>
+                                                <td><?php echo $w->price; ?></td>
+                                                <td><?php echo $w->location; ?></td>
+                                                <td><?php echo $w->bedroom; ?></td>
+                                                <td><?php echo $w->bathroom; ?></td>
+                                                <td><?php echo $w->kitchen; ?></td>
+                                                <td><?php echo $w->floor; ?></td>
+                                                <td><?php echo $w->parking; ?></td>
+                                                <td><?php echo $w->title; ?></td>
+                                                <td><?php echo $w->long_desc; ?></td>
+                                                <td>
+                                                    <a href="edit_single_property?esingle_pro=<?php echo $w->id; ?>" class="btn btn-primary">Edit</a>
+                                                    <a href="delete?dsingle_pro=<?php echo $w->id; ?>" class="btn btn-danger">Delete</a>
+                                                </td>
+                                            </tr>
+                                        <?php
+                                        }
+                                    } else {
                                         ?>
-                                    <tr>
-                                        <td align="center" colspan="8"> Data Not Found </td>
-                                    </tr>
+                                        <tr>
+                                            <td align="center" colspan="8"> Data Not Found </td>
+                                        </tr>
                                     <?php
-										}
-										?>
+                                    }
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
@@ -108,9 +104,9 @@ include_once('navbar.php');
 <script src="assets/js/dataTables/jquery.dataTables.js"></script>
 <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
 <script>
-$(document).ready(function() {
-    $('#dataTables-example').dataTable();
-});
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
 </script>
 <!-- CUSTOM SCRIPTS -->
 <script src="assets/js/custom.js"></script>

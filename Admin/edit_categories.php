@@ -23,7 +23,7 @@ include_once('navbar.php');
                                 <form role="form" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Categories Name</label>
-                                        <input value="<?php echo $fetch->name;?>" name="name" class="form-control"
+                                        <input value="<?php echo $fetch->name; ?>" name="name" class="form-control"
                                             placeholder="Please Enter Service Name" />
                                     </div>
 

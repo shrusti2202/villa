@@ -24,17 +24,17 @@ include_once('navbar.php');
                                     <div class="form-group">
                                         <label>contact Name</label>
                                         <input class="form-control" placeholder="Please Enter  Name"
-                                        value="<?php echo $fetch->name;?>" name="name" />
+                                            value="<?php echo $fetch->name; ?>" name="name" />
                                     </div>
                                     <div class="form-group">
                                         <label>contact Email</label>
                                         <input class="form-control" placeholder="Please Enter email"
-                                        value="<?php echo $fetch->email;?>" name="email" />  
+                                            value="<?php echo $fetch->email; ?>" name="email" />
                                     </div>
                                     <div class="form-group">
                                         <label>Comment</label>
                                         <input class="form-control" placeholder="Please Enter comment"
-                                        value="<?php echo $fetch->comment;?>" name="comment" />  
+                                            value="<?php echo $fetch->comment; ?>" name="comment" />
                                     </div>
 
 

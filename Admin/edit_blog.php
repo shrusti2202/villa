@@ -24,23 +24,23 @@ include_once('navbar.php');
                                     <div class="form-group">
                                         <label>Blog Name</label>
                                         <input class="form-control" placeholder="Please Enter Service Name"
-                                        value="<?php echo $fetch->name;?>" name="name" />
+                                            value="<?php echo $fetch->name; ?>" name="name" />
                                     </div>
                                     <div class="form-group">
                                         <label>Blog Location</label>
                                         <input class="form-control" placeholder="Please Enter plce"
-                                        value="<?php echo $fetch->place;?>" name="place" />
+                                            value="<?php echo $fetch->place; ?>" name="place" />
                                     </div>
                                     <div class="form-group">
                                         <label>Blog Image</label>
-                                        <input type="file" class="form-control"  value="<?php echo $fetch->img;?>"
+                                        <input type="file" class="form-control" value="<?php echo $fetch->img; ?>"
                                             name="img" />
-                                            <img src="upload/blog/<?php echo $fetch->img?>" width="50px">
+                                        <img src="upload/blog/<?php echo $fetch->img ?>" width="50px">
                                     </div>
                                     <div class="form-group">
                                         <label>Description</label>
                                         <input class="form-control" placeholder="Please Enter Description"
-                                            value="<?php echo $fetch->description;?>" name="description" />
+                                            value="<?php echo $fetch->description; ?>" name="description" />
                                     </div>
 
 

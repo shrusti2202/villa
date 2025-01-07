@@ -12,21 +12,20 @@
 include_once('navbar.php');
 
 ?>
-  <div class="page-heading header-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Home</a>  /  Single Property</span>
-          <h3>Single Property</h3>
-        </div>
+<div class="page-heading header-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <span class="breadcrumb"><a href="#">Home</a> / Single Property</span>
+        <h3>Single Property</h3>
       </div>
     </div>
   </div>
+</div>
 
 <?php
 
-  foreach($single_pro as $w)
-  {
+foreach ($single_pro as $w) {
 ?>
 
   <div class="single-property section">
@@ -34,19 +33,20 @@ include_once('navbar.php');
       <div class="row">
         <div class="col-lg-8">
           <div class="main-image">
-          <img src="../Admin/upload/property/<?php echo $w->img;?>" width="100%" height="250px" />
+            <img src="../Admin/upload/property/<?php echo $w->img; ?>" width="100%" height="250px" />
           </div>
-            
+
           <div class="main-content">
             <span class="category">Apparment</span>
             <h5 class="mt-3">Sindhu Bhavan, Ahmedabad</h5>
-         
-         <br>
+
+            <br>
             <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website. TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates" target="_blank">best free CSS templates</a> in the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
-            
-            <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard PBR&B DSA poutine neutra cardigan hoodie pop-up.</p>
-          </div> 
-          
+
+              <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard PBR&B DSA poutine neutra cardigan hoodie pop-up.
+            </p>
+          </div>
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -104,7 +104,8 @@ include_once('navbar.php');
               <li>
                 <img src="https://cdn-icons-png.freepik.com/256/4441/4441016.png?ga=GA1.1.394245931.1708071990&semt=ais_hybrid" alt="" style="max-width: 52px;">
                 <h4>Floor : 3</h4>
-              </li>        <li>
+              </li>
+              <li>
                 <img src="https://cdn-icons-png.freepik.com/256/7114/7114924.png?ga=GA1.1.394245931.1708071990&semt=ais_hybrid" alt="" style="max-width: 52px;">
                 <h4>Parking : 6 spots</h4>
               </li>
@@ -139,7 +140,7 @@ include_once('navbar.php');
                     <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Penthouse</button>
                   </li>
                 </ul>
-              </div>              
+              </div>
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
                   <div class="row">
@@ -224,9 +225,9 @@ include_once('navbar.php');
     </div>
   </div>
 
- <?php
- }
- ?>
+<?php
+}
+?>
 
 include_once('footer.php');
 

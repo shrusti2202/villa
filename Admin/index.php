@@ -1,7 +1,6 @@
 ﻿﻿<?php
-if(isset($_SESSION['aid']))
-{
-	echo "<script>
+if (isset($_SESSION['aid'])) {
+    echo "<script>
 		window.location='dashboard'
 		</script>";
 }

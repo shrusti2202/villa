@@ -30,13 +30,12 @@ include_once('navbar.php');
                                         <select class="form-control" id="contact-select" name="cat_id">
                                             <option value="-">Select categories</option>
                                             <?php
-                      foreach($categories as $w)
-                      {
-                      ?>
-                                            <option value="<?php echo $w->id?>"><?php echo $w->name?></option>
+                                            foreach ($categories as $w) {
+                                            ?>
+                                                <option value="<?php echo $w->id ?>"><?php echo $w->name ?></option>
                                             <?php
-                      }
-                      ?>
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group">

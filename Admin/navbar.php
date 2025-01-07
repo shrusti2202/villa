@@ -1,13 +1,10 @@
 <?php
-if(isset($_SESSION['aid']))
-{
-}
-else
-{
-		echo "<script>
+if (isset($_SESSION['aid'])) {
+} else {
+    echo "<script>
 		window.location='admin'
 		</script>";
-}	
+}
 
 ?>
 
@@ -40,7 +37,9 @@ else
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="admin"><h3>The Urban Oasis</h3></a>
+                <a class="navbar-brand" href="admin">
+                    <h3>The Urban Oasis</h3>
+                </a>
             </div>
             <div class="navbar-right  navbar-brand">
                 <a href="admin_logout" class="btn btn-danger" title="Logout">Logout</a>
@@ -55,8 +54,8 @@ else
                         <img src="assets/img/find_user.png" class="user-image img-responsive" />
                         <div class="inner-text text-danger">
                             <h3>
-                                <?php echo $_SESSION['aid']?>
-                                <?php echo $_SESSION['aname']?>
+                                <?php echo $_SESSION['aid'] ?>
+                                <?php echo $_SESSION['aname'] ?>
                                 <br />
                                 <small>Last Login : Just Now</small>
                             </h3>

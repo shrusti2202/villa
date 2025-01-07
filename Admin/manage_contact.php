@@ -32,35 +32,31 @@ include_once('navbar.php');
                                 </thead>
                                 <tbody>
                                     <?php
-										if(!empty($contact))
-										{
-											foreach($contact as $w)
-											{
-											?>
-                                    <tr>
-                                        <td><?php echo $w->id;?></td>
-                                        <td><?php echo $w->name;?></td>
-                                        <td><?php echo $w->email;?></td>
-                                        <td><?php echo $w->comment;?></td>
-                                        <td>
-                                            <a href="status?status_contact=<?php echo $w->id;?>" class="btn btn-success"><?php echo $w->	status;?></a>
-                                            <a href="edit_contact?econtact=<?php echo $w->id;?>" class="btn btn-primary">Edit</a>
-                                            <a href="delete?dcontact=<?php echo $w->id;?>"
-                                                class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <?php
-											}
-										}
-                                        else
-										{	
+                                    if (!empty($contact)) {
+                                        foreach ($contact as $w) {
+                                    ?>
+                                            <tr>
+                                                <td><?php echo $w->id; ?></td>
+                                                <td><?php echo $w->name; ?></td>
+                                                <td><?php echo $w->email; ?></td>
+                                                <td><?php echo $w->comment; ?></td>
+                                                <td>
+                                                    <a href="status?status_contact=<?php echo $w->id; ?>" class="btn btn-success"><?php echo $w->status; ?></a>
+                                                    <a href="edit_contact?econtact=<?php echo $w->id; ?>" class="btn btn-primary">Edit</a>
+                                                    <a href="delete?dcontact=<?php echo $w->id; ?>"
+                                                        class="btn btn-danger">Delete</a>
+                                                </td>
+                                            </tr>
+                                        <?php
+                                        }
+                                    } else {
                                         ?>
-                                    <tr>
-                                        <td align="center" colspan="4"> Data Not Found </td>
-                                    </tr>
+                                        <tr>
+                                            <td align="center" colspan="4"> Data Not Found </td>
+                                        </tr>
                                     <?php
-										}
-										?>
+                                    }
+                                    ?>
 
 
                                 </tbody>
@@ -94,9 +90,9 @@ include_once('navbar.php');
 <script src="assets/js/dataTables/jquery.dataTables.js"></script>
 <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
 <script>
-$(document).ready(function() {
-    $('#dataTables-example').dataTable();
-});
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
 </script>
 <!-- CUSTOM SCRIPTS -->
 <script src="assets/js/custom.js"></script>
