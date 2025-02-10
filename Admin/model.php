@@ -10,11 +10,11 @@
     */
 
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
-header("Access-Control-Allow-Methods: *");
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Headers: *");
+// header("Access-Control-Allow-Methods: *");
 
 
 class model
@@ -23,7 +23,7 @@ class model
 	function __construct()
 	{
 		// hostname // uname // pass // db name
-		$this->conn = new mysqli('localhost', 'root', '', 'villa');
+		$this->conn = new mysqli('localhost', 'root', '' , 'villa');
 	}
 
 	function select($tbl)

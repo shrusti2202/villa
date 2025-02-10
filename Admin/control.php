@@ -2,7 +2,6 @@
 
 include_once('model.php'); // 1 step : load model in control
 
-
 class control extends model    // 2 step extends(inherit) model class
 {
 	// auto call magic function  only make clsss object 

@@ -78,7 +78,7 @@ https://templatemo.com/tm-591-villa-agency
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="home" class="active">Home</a></li>
+                            <li><a href="/" class="active">Home</a></li>
                             <li><a href="properties">Properties</a></li>
                             <!-- <li><a href="single_property">Property Details</a></li> -->
                             <li><a href="blog">blog </a></li>
@@ -88,15 +88,15 @@ https://templatemo.com/tm-591-villa-agency
                             ?>
 
 
-                                <li class="nav-item "><a class="nav-link tm-nav-link" href="profile">Hi..
+                                <li><a href="profile">Hi..
                                         <?php echo $_SESSION['uname']; ?></a></li>
-                                <li class="nav-item "><a class="nav-link tm-nav-link" href="user_logout">Logout</a></li>
+                                <li><a href="user_logout">Logout</a></li>
 
                             <?php
 
                             } else {
                             ?>
-                                <li class="nav-item "><a class="nav-link tm-nav-link" href="signup">Signup</a></li>
+                                <li><a href="signup">Signup</a></li>
                             <?php
                             }
                             ?>

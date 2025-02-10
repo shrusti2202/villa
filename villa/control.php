@@ -15,7 +15,7 @@ class control extends model     // 2 step extends(inherit) model class
 		$url = $_SERVER['PATH_INFO']; // PATH urldecode
 
 		switch ($url) {
-			case '/home':
+			case '/':
 				if (isset($_REQUEST['submit'])) {
 					$name = $_REQUEST['name'];
 					$email = $_REQUEST['email'];

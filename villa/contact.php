@@ -16,7 +16,7 @@ include_once('navbar.php');
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <span class="breadcrumb"><a href="#">Home</a> / Contact Us</span>
+        <span class="breadcrumb"><a href="/">Home</a> / Contact Us</span>
         <h3>Contact Us</h3>
       </div>
     </div>
